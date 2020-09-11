@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="MissingConstraints">
+
+    <com.zee.view.ZxTabLayout
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:id="@+id/tabLayout_home"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:zv_textColor="#000"
+        app:zv_tab_space_equal="true"
+        app:zv_textBold="SELECT"
+
+        app:zv_textSize="16dp"
+        app:zv_textSelectColor="#f00"
+        app:zv_title_text="热门|最新|广场|项目|公众号" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager_homeItem"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
