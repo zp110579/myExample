@@ -7,18 +7,14 @@
     android:orientation="vertical"
     tools:ignore="MissingConstraints">
 
-    <com.zee.view.ZxTabLayout
-        android:id="@+id/tabLayout_home"
-        style="@style/topZxTabLayoutStyle"
-        app:zv_tab_space_equal="true"
+    <com.zee.view.ZxRecyclerView
+        android:id="@+id/recycler_view_tag"
+        android:layout_width="wrap_content"
         android:layout_height="40dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginRight="32dp"
-        app:zv_title_text="热门|热门项目|广场" />
+        app:zv_linearLayoutManager="LinearLayoutManager_HORIZONTAL" />
 
-    <androidx.viewpager.widget.ViewPager
-        android:id="@+id/viewPager_homeItem"
+    <com.zee.view.ZxRecyclerView
+        android:id="@+id/recycler_view_system"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
-
 </LinearLayout>

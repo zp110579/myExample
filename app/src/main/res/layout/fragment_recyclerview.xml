@@ -6,17 +6,9 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <com.zee.view.ZxSolidTabLayout
-        android:id="@+id/solidTabLayout_other"
-        android:layout_width="wrap_content"
-        android:layout_height="40dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="16dp"
-        app:zv_tab_width="100dp"
-        app:zv_title_text="面试|发现|导航 " />
 
-    <androidx.viewpager.widget.ViewPager
-        android:id="@+id/viewPager_other"
+    <com.zee.view.ZxRecyclerView
+        android:id="@+id/recycler_view_common"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 </LinearLayout>

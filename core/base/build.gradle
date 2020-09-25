@@ -27,10 +27,11 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+
 }
 
 dependencies {
-
+    api 'com.zee:http:1.0.3'
     implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation 'com.google.android.material:material:1.1.0'
     testImplementation 'junit:junit:4.+'
@@ -38,7 +39,9 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
     implementation "androidx.core:core-ktx:+"
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-    api 'com.zee:zlibrary:1.5.81'
+    api 'com.zee:zlibrary:1.5.82'
+    //腾讯 X5
+    api 'com.tencent.tbs.tbssdk:sdk:43697'
 
 }
 repositories {

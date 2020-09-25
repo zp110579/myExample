@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:gravity="center">
+
+    <com.zee.view.ZxTextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ECEAEA"
+        android:paddingLeft="15dp"
+        android:paddingTop="3dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="3dp"
+        android:text="姓名"
+        android:textColor="#1B1B1D"
+        android:textSize="14sp"
+        app:zv_backgroundSelectColor="#CCCACA"
+
+        app:zv_radius="4dp"
+        app:zv_radiusHalfHeight="true"
+        app:zv_textSelectColor="#1B1B1D" />
+</LinearLayout>

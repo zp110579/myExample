@@ -3,6 +3,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.zee.extendobject.eventBusUnRegister
 
 /**
  *created by zee on 2020/9/8.
@@ -27,4 +28,9 @@ abstract class BaseFragment : Fragment() {
     }
 
     abstract fun inViews()
+
+    override fun onDestroy() {
+        super.onDestroy()
+        eventBusUnRegister(this)
+    }
 }

@@ -4,20 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:ignore="MissingConstraints">
+    android:orientation="vertical">
 
     <com.zee.view.ZxTabLayout
-        android:id="@+id/tabLayout_home"
+        android:id="@+id/tabLayout_system"
         style="@style/topZxTabLayoutStyle"
-        app:zv_tab_space_equal="true"
-        android:layout_height="40dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginRight="32dp"
-        app:zv_title_text="热门|热门项目|广场" />
+        android:layout_width="match_parent"
+
+        android:layout_height="40dp" />
 
     <androidx.viewpager.widget.ViewPager
-        android:id="@+id/viewPager_homeItem"
+        android:id="@+id/viewPager_system"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 

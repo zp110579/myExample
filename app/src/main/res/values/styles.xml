@@ -8,5 +8,16 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="topZxTabLayoutStyle">
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="zv_textColor">#000</item>
+        <item name="zv_textBold">SELECT</item>
+        <item name="zv_tab_width">80dp</item>
+        <item name="zv_textSize">16sp</item>
+        <item name="zv_textSelectColor">#f00</item>
+    </style>
+
 
 </resources>

@@ -1,5 +1,6 @@
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentStatePagerAdapter
 import com.zee.app.R
-import com.zee.extendobject.setVisible
 import kotlinx.android.synthetic.main.fragment_main_home.*
 
 /**
@@ -12,7 +13,15 @@ class MainHomeFragment : BaseFragment() {
     }
 
     override fun inViews() {
-        tabLayout_home.setVisible()
+        viewPager_homeItem.adapter = object : FragmentStatePagerAdapter(childFragmentManager) {
+            override fun getItem(position: Int): Fragment {
+                return MainHomeItemFragment.newInstance(position)
+            }
+
+            override fun getCount(): Int {
+                return 3
+            }
+        }
 
         tabLayout_home.setViewPager(viewPager_homeItem)
     }

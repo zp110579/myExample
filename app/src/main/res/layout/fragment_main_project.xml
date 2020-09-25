@@ -8,16 +8,16 @@
     tools:ignore="MissingConstraints">
 
     <com.zee.view.ZxTabLayout
-        android:id="@+id/tabLayout_home"
-        style="@style/topZxTabLayoutStyle"
-        app:zv_tab_space_equal="true"
+        android:id="@+id/tabLayout_projects"
+        android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginRight="32dp"
-        app:zv_title_text="热门|热门项目|广场" />
+        app:zv_textBold="SELECT"
+        app:zv_textColor="#000"
+        app:zv_textSelectColor="#f00"
+        app:zv_textSize="16dp" />
 
     <androidx.viewpager.widget.ViewPager
-        android:id="@+id/viewPager_homeItem"
+        android:id="@+id/viewPager_projects"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
